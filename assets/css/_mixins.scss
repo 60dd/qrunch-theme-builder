@@ -1,0 +1,25 @@
+@mixin min-xs {
+  @media ($min-xs) {
+    @content;
+  }
+}
+@mixin min-sm {
+  @media ($min-sm) {
+    @content;
+  }
+}
+@mixin min-md {
+  @media ($min-md) {
+    @content;
+  }
+}
+@mixin min-lg {
+  @media ($min-lg) {
+    @content;
+  }
+}
+@mixin min-xl {
+  @media ($min-xl) {
+    @content;
+  }
+}
