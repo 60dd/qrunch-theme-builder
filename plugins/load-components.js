@@ -1,9 +1,13 @@
 import Vue from 'vue'
 
-// import c_ArchiveEntry from '~/components/layouts/archive-entry'
+import Header from '~/components/layout/Header'
+import HeaderBottom from '~/components/layout/HeaderBottom'
+import SubContents from '~/components/layout/SubContents'
 
 Vue.mixin({
   components: {
-    // c_ArchiveEntry
+    Header,
+    HeaderBottom,
+    SubContents
   }
 })
