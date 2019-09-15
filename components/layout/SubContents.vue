@@ -20,7 +20,7 @@
                       <h3 class="side-module__title">プロフィール</h3>
                       <div class="side-module__content">
                           <a href="#" target="_blank" class="side-module__profile-icon-link">
-                              <img src="#" class="side-module__profile-icon" />
+                              <img src="https://s3.qrunch.io/7082aaaf8ca2be37cf1e123e8d85f0c1.png" class="side-module__profile-icon" />
                           </a>
                           <div class="side-module__profile-name">
                               <a href="#" target="_blank" class="side-module__profile-name-link">User Name</a>
@@ -39,7 +39,19 @@
                               <li class="side-module__category-item">
                                   <a href="#" class="side-module__category-item-link">
                                       <span class="side-module__category-item-month">Category Name</span>
-                                      <span class="side-module__category-item-count">（Category Count）</span>
+                                      <span class="side-module__category-item-count">（00）</span>
+                                  </a>
+                              </li>
+                              <li class="side-module__category-item">
+                                  <a href="#" class="side-module__category-item-link">
+                                      <span class="side-module__category-item-month">Category Name</span>
+                                      <span class="side-module__category-item-count">（00）</span>
+                                  </a>
+                              </li>
+                              <li class="side-module__category-item">
+                                  <a href="#" class="side-module__category-item-link">
+                                      <span class="side-module__category-item-month">Category Name</span>
+                                      <span class="side-module__category-item-count">（00）</span>
                                   </a>
                               </li>
                           </ul>
@@ -53,9 +65,18 @@
               <!-- ### 記事タグ ### -->
               <div class="sub-content__side-mudules">
                   <div class="side-mudule side-tag-module">
-                      <h3 class="side-module__title">カテゴリー</h3>
+                      <h3 class="side-module__title">よく使うタグ</h3>
                       <div class="side-module__content">
                           <ul class="side-module__tags">
+                              <li class="side-module__tag-item">
+                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
+                              </li>
+                              <li class="side-module__tag-item">
+                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
+                              </li>
+                              <li class="side-module__tag-item">
+                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
+                              </li>
                               <li class="side-module__tag-item">
                                   <a href="#" class="side-module__tag-item-link">Tag Name</a>
                               </li>
