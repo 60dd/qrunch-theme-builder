@@ -64,5 +64,6 @@
               <SubContents/>
           </div>
       </div>
+      <Footer/>
   </div>
 </template>
