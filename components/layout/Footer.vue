@@ -1,13 +1,13 @@
-<template>
-    <!-- ### フッター ### -->
-    <footer class="main-footer">
-        <div class="main-footer__inner">
-            <span class="main-footer__blog-title">
-                    <a href="/" class="main-footer__blog-title-link">Blog Title</a>
-            </span>
-            <span class="main-footer__blog-copyright">©2018-2019 <a
-                href="#" target="_blank" class="main-footer__blog-copyright-user-link">@User Screen Name</a>, Powered by <a
-                href="https://qrunch.net" target="_blank" class="main-footer__blog-copyright-qrunch-link">Qrunch</a>.</span>
+<template lang="pug">
+    footer.main-footer
+        .main-footer__inner
+            span.main-footer__blog-title
+                a.main-footer__blog-title-link(href="/") Blog Title
+            span.main-footer__blog-copyright ©2018-2019
+                a.main-footer__blog-copyright-user-link(href="#" target="_blank") @User Screen Name
+                | , Powered by 
+                a.main-footer__blog-copyright-qrunch-link(href="https://qrunch.net" target="_blank") qrunch
+                | .
         </div>
     </footer>
 </template>

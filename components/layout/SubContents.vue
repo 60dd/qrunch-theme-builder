@@ -1,114 +1,60 @@
-<template>
-  <!-- ### サブコンテント（サイドバー） ### -->
-  <div class="content-box__sub-content">
-      <aside class="sub-content">
-          <div class="sub-content__inner">
-              <!-- ### ブログ内検索 ### -->
-              <div class="sub-content__side-mudules">
-                  <div class="side-mudule side-search-module">
-                      <h3 class="side-module__title">検索</h3>
-                      <div class="side-module__content">
-                          <form class="side-module__form" method="get" action="/search">
-                              <input type="search" class="side-module__input" placeholder="ブログ内を検索..." name="q" value="" />
-                          </form>
-                      </div>
-                  </div>
-              </div>
-              <!-- ### プロフィール ### -->
-              <div class="sub-content__side-mudules">
-                  <div class="side-mudule side-search-module">
-                      <h3 class="side-module__title">プロフィール</h3>
-                      <div class="side-module__content">
-                          <a href="#" target="_blank" class="side-module__profile-icon-link">
-                              <img src="https://s3.qrunch.io/7082aaaf8ca2be37cf1e123e8d85f0c1.png" class="side-module__profile-icon" />
-                          </a>
-                          <div class="side-module__profile-name">
-                              <a href="#" target="_blank" class="side-module__profile-name-link">User Name</a>
-                          </div>
-                          <div class="side-module__profile-id">@User Screen Name</div>
-                          <div class="side-module__profile-description">Profile Description</div>
-                      </div>
-                  </div>
-              </div>
-              <!-- ### 記事カテゴリー ### -->
-              <div class="sub-content__side-mudules">
-                  <div class="side-mudule side-category-module">
-                      <h3 class="side-module__title">カテゴリー</h3>
-                      <div class="side-module__content">
-                          <ul class="side-module__categories">
-                              <li class="side-module__category-item">
-                                  <a href="#" class="side-module__category-item-link">
-                                      <span class="side-module__category-item-month">Category Name</span>
-                                      <span class="side-module__category-item-count">（00）</span>
-                                  </a>
-                              </li>
-                              <li class="side-module__category-item">
-                                  <a href="#" class="side-module__category-item-link">
-                                      <span class="side-module__category-item-month">Category Name</span>
-                                      <span class="side-module__category-item-count">（00）</span>
-                                  </a>
-                              </li>
-                              <li class="side-module__category-item">
-                                  <a href="#" class="side-module__category-item-link">
-                                      <span class="side-module__category-item-month">Category Name</span>
-                                      <span class="side-module__category-item-count">（00）</span>
-                                  </a>
-                              </li>
-                          </ul>
-                          <!-- ### 表示するデータがない場合 ### -->
-                          <div class="side-module__no-content">
-                              <span>データなし</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- ### 記事タグ ### -->
-              <div class="sub-content__side-mudules">
-                  <div class="side-mudule side-tag-module">
-                      <h3 class="side-module__title">よく使うタグ</h3>
-                      <div class="side-module__content">
-                          <ul class="side-module__tags">
-                              <li class="side-module__tag-item">
-                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
-                              </li>
-                              <li class="side-module__tag-item">
-                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
-                              </li>
-                              <li class="side-module__tag-item">
-                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
-                              </li>
-                              <li class="side-module__tag-item">
-                                  <a href="#" class="side-module__tag-item-link">Tag Name</a>
-                              </li>
-                          </ul>
-                          <!-- ### 表示するデータがない場合 ### -->
-                          <div class="side-module__no-content">
-                              <span>データなし</span>
-                          </div>
-                      </div>
-                  </div>
-              </div> 
-              <!-- ### 月別アーカイブ ### -->
-              <div class="sub-content__side-mudules">
-                  <div class="side-mudule side-monthly-archive-module">
-                      <h3 class="side-module__title">月別アーカイブ</h3>
-                      <div class="side-module__content">
-                          <ul class="side-module__monthly-archives">
-                              <li class="side-module__monthly-archive-item">
-                                  <a href="#" class="side-module__monthly-archive-item-link">
-                                      <span class="side-module__monthly-archive-item-month">Archive Year-Archive Month</span>
-                                      <span class="side-module__monthly-archive-item-count">(Archive Count)</span>
-                                  </a>
-                              </li>
-                          </ul>
-                          <!-- ### 表示するデータがない場合 ### -->
-                          <div class="side-module__no-content">
-                              <span>データなし</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </aside>
-  </div>
+<template lang="pug">
+  .content-box__sub-content
+    aside.sub-content
+      .sub-content__inner
+        .sub-content__side-mudules
+          .side-mudule.side-search-module
+            h3.side-module__title 検索
+            .side-module__content
+              form.side-module__form(method="get" action="/search")
+                input.side-module__input(type="search" placeholder="ブログ内を検索..." name="q" value="")
+        .sub-content__side-mudules
+          .side-mudule.side-profile-module
+            h3.side-module__title プロフィール
+            .side-module__content
+              a.side-module__profile-icon-link(href="#" target="_blank")
+                img.side-module__profile-icon(src="https://s3.qrunch.io/7082aaaf8ca2be37cf1e123e8d85f0c1.png")
+              .side-module__profile-name
+                a.side-module__profile-name-link(href="#" target="_blank") User Name
+              .side-module__profile-id @User Screen Name
+              .side-module__profile-description Profile Description
+        .sub-content__side-mudules
+          .side-mudule.side-category-module
+            h3.side-module__title カテゴリー
+            .side-module__content
+              ul.side-module__categories
+                li.side-module__category-item
+                  a.side-module__category-item-link(href="#")
+                    span.side-module__category-item-month Category Name
+                    span.side-module__category-item-count （00）
+                li.side-module__category-item
+                  a.side-module__category-item-link(href="#")
+                    span.side-module__category-item-month Category Name
+                    span.side-module__category-item-count （00）
+                li.side-module__category-item
+                  a.side-module__category-item-link(href="#")
+                    span.side-module__category-item-month Category Name
+                    span.side-module__category-item-count （00）
+              .side-module__no-content
+                span データなし
+        .sub-content__side-mudules
+          .side-mudule.side-tag-module
+            h3.side-module__title よく使うタグ
+            .side-module__content
+              ul.side-module__tags
+                li.side-module__tag-item
+                  a.side-module__tag-item-link(href="#") Tag Name
+              .side-module__no-content
+                span データなし
+        .sub-content__side-mudules
+          .side-mudule.side-monthly-archive-module
+            h3.side-module__title 月別アーカイブ
+            .side-module__content
+              ul.side-module__monthly-archives
+                li.side-module__monthly-archive-item
+                  a.side-module__monthly-archive-item-link(href="#")
+                    span.side-module__monthly-archive-item-month Archive Year-Archive Month
+                    span.side-module__monthly-archive-item-count (Archive Count)
+              .side-module__no-content
+                span データなし
 </template>
