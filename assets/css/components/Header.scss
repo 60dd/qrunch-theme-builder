@@ -1,9 +1,7 @@
 .main-header {
   background: #f8f8f8;
   &__blog-title {
-    margin: auto;
     padding: 1rem 1rem 0;
-    max-width: 80rem;
     &-link {
       font-size: 1.6rem;
       font-weight: bold;
@@ -13,9 +11,6 @@
     }
   }
   &__blog-description {
-    margin: auto;
-    padding: 0 1rem;
-    max-width: 80rem;
     font-size: .8rem;
     font-weight: normal;
     color: #777;
@@ -26,7 +21,6 @@
       display: flex;
       margin: 1rem auto 0;
       padding: 0 .8rem;
-      max-width: 80rem;
       font-size: .9rem;
       list-style: none;
     }
