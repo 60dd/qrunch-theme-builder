@@ -61,8 +61,16 @@
               ul.side-module__monthly-archives
                 li.side-module__monthly-archive-item
                   a.side-module__monthly-archive-item-link(href="#")
-                    span.side-module__monthly-archive-item-month Archive Year-Archive Month
-                    span.side-module__monthly-archive-item-count (Archive Count)
+                    span.side-module__monthly-archive-item-month 2019-12
+                    span.side-module__monthly-archive-item-count (20)
+                li.side-module__monthly-archive-item
+                  a.side-module__monthly-archive-item-link(href="#")
+                    span.side-module__monthly-archive-item-month 2019-11
+                    span.side-module__monthly-archive-item-count (10)
+                li.side-module__monthly-archive-item
+                  a.side-module__monthly-archive-item-link(href="#")
+                    span.side-module__monthly-archive-item-month 2019-10
+                    span.side-module__monthly-archive-item-count (2)
               // 表示するデータがない場合
               .side-module__no-content
                 span データなし
