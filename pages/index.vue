@@ -12,7 +12,39 @@
               // トップページ・記事リスト
               .entry-list
                 .entry-list__entries
-                  // 記事
+                  // 記事1
+                  .entry-item.entry-item--large
+                    .entry-item__inner
+                      time.entry-item__date
+                        a.entry-item__date-link(href="#") 2018-10-24
+                      h2.entry-item__title
+                        a.entry-item__title-link(href="#") Entry Title
+                      .entry-item__categories
+                        span.entry-item__category-item
+                          a.entry-item__category-item-link(href="#") Category-1
+                        span.entry-item__category-item
+                          a.entry-item__category-item-link(href="#") Category-2
+                        span.entry-item__category-item
+                          a.entry-item__category-item-link(href="#") Category-3
+                      .entry-item__description Entry Desciption
+                  // 記事2
+                  .entry-item.entry-item--large
+                    .entry-item__inner
+                      time.entry-item__date
+                        a.entry-item__date-link(href="#") 2018-10-24
+                      h2.entry-item__title
+                        a.entry-item__title-link(href="#") Entry Title
+                      .entry-item__categories
+                        span.entry-item__category-item
+                          a.entry-item__category-item-link(href="#") Category-1
+                        span.entry-item__category-item
+                          a.entry-item__category-item-link(href="#") Category-2
+                        span.entry-item__category-item
+                          a.entry-item__category-item-link(href="#") Category-3
+                      a.entry-item__thumbnail-link 
+                        img.entry-item__thumbnail(src="https://s3.qrunch.io/16827a97c50ae645c9f54f7e0ba4341f.png")
+                      .entry-item__description.entry-item__description--inline-block Entry Desciption
+                  // 記事3
                   .entry-item.entry-item--large
                     .entry-item__inner
                       time.entry-item__date
