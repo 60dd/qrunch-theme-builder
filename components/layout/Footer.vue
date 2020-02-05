@@ -9,6 +9,4 @@
                 | , Powered by 
                 a.main-footer__blog-copyright-qrunch-link(href="https://qrunch.net" target="_blank") qrunch
                 | .
-        </div>
-    </footer>
 </template>
