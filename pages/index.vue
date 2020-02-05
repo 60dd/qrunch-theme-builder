@@ -43,5 +43,6 @@
                   span.content-list-pager__previous
                     a.content-list-pager__next-link.content-list-pager__previous-link--disabled(href="#") 次のページへ
         SubContents
+    FooterTop
     Footer
 </template>
