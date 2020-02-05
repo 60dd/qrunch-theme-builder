@@ -39,9 +39,9 @@
                     a.content-list-pager__next-link(href="#") 次のページへ
                   // ページ分割がない場合
                   span.content-list-pager__previous
-                    a.content-list-pager__previous-link.content-list-pager__previous-link--disabled(href="#") 前のページへ
+                    a.content-list-pager__previous-link.content-list-pager__previous-link--disabled 前のページへ
                   span.content-list-pager__previous
-                    a.content-list-pager__next-link.content-list-pager__previous-link--disabled(href="#") 次のページへ
+                    a.content-list-pager__next-link.content-list-pager__next-link--disabled 次のページへ
         SubContents
     FooterTop
     Footer
