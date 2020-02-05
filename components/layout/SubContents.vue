@@ -4,15 +4,15 @@
     aside.sub-content
       .sub-content__inner
         // 検索モジュール
-        .sub-content__side-mudules
-          .side-mudule.side-search-module
+        .sub-content__side-modules
+          .side-module.side-search-module
             h3.side-module__title 検索
             .side-module__content
               form.side-module__form(method="get" action="/search")
                 input.side-module__input(type="search" placeholder="ブログ内を検索..." name="q" value="")
         // プロフィールモジュール
-        .sub-content__side-mudules
-          .side-mudule.side-profile-module
+        .sub-content__side-modules
+          .side-module.side-profile-module
             h3.side-module__title プロフィール
             .side-module__content
               a.side-module__profile-icon-link(href="#" target="_blank")
@@ -22,8 +22,8 @@
               .side-module__profile-id @User Screen Name
               .side-module__profile-description Profile Description
         // カテゴリーモジュール
-        .sub-content__side-mudules
-          .side-mudule.side-category-module
+        .sub-content__side-modules
+          .side-module.side-category-module
             h3.side-module__title カテゴリー
             .side-module__content
               ul.side-module__categories
@@ -43,8 +43,8 @@
               .side-module__no-content
                 span データなし
         // タグモジュール
-        .sub-content__side-mudules
-          .side-mudule.side-tag-module
+        .sub-content__side-modules
+          .side-module.side-tag-module
             h3.side-module__title よく使うタグ
             .side-module__content
               ul.side-module__tags
@@ -54,8 +54,8 @@
               .side-module__no-content
                 span データなし
         // 月別アーカイブモジュール
-        .sub-content__side-mudules
-          .side-mudule.side-monthly-archive-module
+        .sub-content__side-modules
+          .side-module.side-monthly-archive-module
             h3.side-module__title 月別アーカイブ
             .side-module__content
               ul.side-module__monthly-archives
