@@ -1,4 +1,5 @@
 <template lang="pug">
+  // ヘッダー
   header.main-header
     .main-header__inner
       h1.main-header__blog-title

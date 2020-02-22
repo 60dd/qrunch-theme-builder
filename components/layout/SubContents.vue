@@ -1,15 +1,18 @@
 <template lang="pug">
+  // サブコンテント（サイドバー）
   .content-box__sub-content
     aside.sub-content
       .sub-content__inner
-        .sub-content__side-mudules
-          .side-mudule.side-search-module
+        // 検索モジュール
+        .sub-content__side-modules
+          .side-module.side-search-module
             h3.side-module__title 検索
             .side-module__content
               form.side-module__form(method="get" action="/search")
                 input.side-module__input(type="search" placeholder="ブログ内を検索..." name="q" value="")
-        .sub-content__side-mudules
-          .side-mudule.side-profile-module
+        // プロフィールモジュール
+        .sub-content__side-modules
+          .side-module.side-profile-module
             h3.side-module__title プロフィール
             .side-module__content
               a.side-module__profile-icon-link(href="#" target="_blank")
@@ -18,8 +21,9 @@
                 a.side-module__profile-name-link(href="#" target="_blank") User Name
               .side-module__profile-id @User Screen Name
               .side-module__profile-description Profile Description
-        .sub-content__side-mudules
-          .side-mudule.side-category-module
+        // カテゴリーモジュール
+        .sub-content__side-modules
+          .side-module.side-category-module
             h3.side-module__title カテゴリー
             .side-module__content
               ul.side-module__categories
@@ -35,26 +39,39 @@
                   a.side-module__category-item-link(href="#")
                     span.side-module__category-item-month Category Name
                     span.side-module__category-item-count （00）
+              // 表示するデータがない場合
               .side-module__no-content
                 span データなし
-        .sub-content__side-mudules
-          .side-mudule.side-tag-module
+        // タグモジュール
+        .sub-content__side-modules
+          .side-module.side-tag-module
             h3.side-module__title よく使うタグ
             .side-module__content
               ul.side-module__tags
                 li.side-module__tag-item
                   a.side-module__tag-item-link(href="#") Tag Name
+              // 表示するデータがない場合
               .side-module__no-content
                 span データなし
-        .sub-content__side-mudules
-          .side-mudule.side-monthly-archive-module
+        // 月別アーカイブモジュール
+        .sub-content__side-modules
+          .side-module.side-monthly-archive-module
             h3.side-module__title 月別アーカイブ
             .side-module__content
               ul.side-module__monthly-archives
                 li.side-module__monthly-archive-item
                   a.side-module__monthly-archive-item-link(href="#")
-                    span.side-module__monthly-archive-item-month Archive Year-Archive Month
-                    span.side-module__monthly-archive-item-count (Archive Count)
+                    span.side-module__monthly-archive-item-name 2019-12
+                    span.side-module__monthly-archive-item-count (20)
+                li.side-module__monthly-archive-item
+                  a.side-module__monthly-archive-item-link(href="#")
+                    span.side-module__monthly-archive-item-name 2019-11
+                    span.side-module__monthly-archive-item-count (10)
+                li.side-module__monthly-archive-item
+                  a.side-module__monthly-archive-item-link(href="#")
+                    span.side-module__monthly-archive-item-name 2019-10
+                    span.side-module__monthly-archive-item-count (2)
+              // 表示するデータがない場合
               .side-module__no-content
                 span データなし
 </template>

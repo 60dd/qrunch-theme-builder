@@ -22,6 +22,8 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/base.css',
+    '@/assets/theme.css',
     '@/assets/css/main.scss'
   ],
   /*
